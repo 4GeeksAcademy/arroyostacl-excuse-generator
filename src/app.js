@@ -30,5 +30,5 @@ window.onload = function() {
     return newPhrase;
   };
 
-  excuse.innerText = getPhrase("murcielago", "a");
+  excuse.innerText = getPhrase();
 };
