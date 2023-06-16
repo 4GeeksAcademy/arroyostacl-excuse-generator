@@ -19,9 +19,10 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  const all = [who, action, what, when];
 
-  const getPhrase = () => {
+
+  const getPhrase = (who, action, what, when) => {
+    const all = [who, action, what, when];
     let newPhrase = "";
     all.forEach(item => {
       newPhrase += item[Math.floor(Math.random() * item.length)] + " ";
@@ -30,5 +31,5 @@ window.onload = function() {
     return newPhrase;
   };
 
-  excuse.innerText = getPhrase();
+  excuse.innerText = getPhrase(who, action, what, when);
 };
